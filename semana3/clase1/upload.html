@@ -113,7 +113,23 @@
         <label for="artistname">Artist Name</label>
         <input type="text" name="text" id="artist"><br>
         <label for="songcover">Song Cover</label>
-        <input type="image" src="" alt="">
+        <input type="file" src="" ><br>
+        <label for="songcover">Song File</label>
+        <input type="file" src="" ><br> 
+        <label for="songcover">Song Date Release</label>
+        <input type="date" src="" ><br>
+        <label for="country">Select your country</label>
+        <input list="countries"type="text"/><br> 
+        <datalist  id="countries">
+          <option value="Colombia"></option>
+          <option value="Venezuela"></option>
+          <option value="Costa Rica"></option>
+        </datalist><br>
+        <label for="">Is a +18 song?</label>
+        <input type="radio" name="mature" value="yes">
+        <label for="">yes</label><br>
+        <input type="radio" name="mature" value="no">
+        <label for="No">No</label><br>
         <input type="submit">
       </form>
     </section>
