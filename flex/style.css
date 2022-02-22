@@ -1,0 +1,23 @@
+.container{
+background-image: repeating-linear-gradient(pink, purple 70%);
+padding: 40px;
+display: flex;
+flex-direction: column;
+height: 100vh;
+ /* justify-content: space-between;
+ align-items: center; */
+ flex-wrap: wrap;
+}
+.child{
+  width: 200px;
+  /* height: 100px; */
+  background-color: green;
+  margin-top: 10px;
+  font-size: 3rem;
+  order: 2;
+  flex-grow: 1;
+}
+#primero{
+  order: 1;
+  flex-grow: 4;
+}
