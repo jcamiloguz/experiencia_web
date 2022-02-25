@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animate</title>
+</head>
+<style>
+  .circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: brown;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 20ms;
+    animation-play-state: paused;
+
+  }
+  .circle:hover{
+    animation-play-state: running;
+  }
+  @keyframes move {
+    from {
+      transform: translateX(0);
+      background-color: brown;
+    }
+    to {
+      transform: translateX(400px);
+      background-color: rgb(15, 5, 5);
+    }
+  } 
+</style>
+<body>
+  <div class="circle"></div>
+</body>
+</html>
